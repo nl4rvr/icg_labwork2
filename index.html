@@ -1,13 +1,235 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 2</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+<head>
+  <meta charset="utf-8">
+  <title>Лабораторная работа №2</title>
+  <script src="http://www.x3dom.org/download/dev/x3dom.js"></script>
+  <link rel="stylesheet" href="http://www.x3dom.org/download/dev/x3dom.css">
+</head>
+<body><h2>Лабораторная работа №2</h2>
+	<x3d width='1300' height='500'>
+		<scene>
+		<transform translation='1 0.3 -1'  rotation='-1 0 0 1.57' >
+			<shape>
+				<appearance>
+					<ImageTexture url='landTexture.jpg'></ImageTexture>
+					
+					
+				</appearance>
+				<plane size='10  10'></plane>
+			</shape>
+			</transform>
+			<!--LEGS-->
+			<transform translation='0 1 0'> 
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='-1.00'>
+					</appearance>
+					<box size='0.3 1 0.3'></box>
+				</shape>
+			</transform>
+			
+			<transform translation='2.5 1 0'> 
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<box size='0.3 1 0.3'></box>
+				</shape>
+			</transform>
+			
+			<transform translation='2.5 1 -1'> 
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<box size='0.3 1 0.3'></box>
+				</shape>
+			</transform>
+			
+			<transform translation='0 1 -1'> 
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<box size='0.3 1 0.3'></box>
+				</shape>
+			</transform>
+			
+			<!--JOINTS-->
+			<transform translation='0 0.5 0'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<sphere radius='0.3'></sphere>
+				</shape>
+			</transform>
+			
+			<transform translation='2.5 0.5 0'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<sphere radius='0.3'></sphere>
+				</shape>
+			</transform>
+			
+			<transform translation='2.5 0.5 -1'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<sphere radius='0.3'></sphere>
+				</shape>
+			</transform>
+			
+			<transform translation='0 0.5 -1'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<sphere radius='0.3'></sphere>
+				</shape>
+			</transform>
+			
+			<!--BODY-->
+			<transform translation='1.2 2.1 -0.5' rotation='0 0 1 1.57'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+					</appearance>
+					<cylinder height='3.9' radius='0.8'></cylinder>
+				</shape>
+			</transform>
+			
+			<!--NECK-->
+			<transform translation='-1 2.3 -0.5' rotation='0 0 1 0.950'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+					</appearance>
+					<cylinder height='1.5' radius='0.2'></cylinder>
+				</shape>
+			</transform>
+			
+			<!--HEAD-->
+			<transform translation='-1.9 2.3 -0.5'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<sphere radius='0.9'></sphere>
+				</shape>
+			</transform>
+			
+			
+			<transform translation='-2.2 3.2 -1' rotation='0 -2.5 1 3.14'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture1.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<cone bottomRadius='0.2' height='0.8'
+				</shape>
+			</transform>
+			
+			<transform translation='-2.2 3.2 0' rotation='0 2.5 1 3.14'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture1.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<cone bottomRadius='0.2' height='0.8'
+				</shape>
+			</transform>
+			
+			<!--FACE-->
+			<transform translation='-2.7 2 -0.5' rotation='0 1 0 1.578' scale='1.4 0.6 1.4' >
+				<shape>
+					<appearance>
+						<material diffuseColor="#540707"></material>
+					</appearance>
+					<torus innerRadius='0.05' outerRadius='0.25'/>></torus>
+				</shape>
+			</transform>
+			
+			<!--TAIL-->
+			<transform translation='3.5 2.2 -0.5' rotation='0 0.9 1 0.950'>
+				<shape>
+					<appearance>
+						<ImageTexture url='woolTexture.jpg'></ImageTexture>
+					</appearance>
+					<cylinder height='1.5' radius='0.1'></cylinder>
+				</shape>
+			</transform>
+			
+			<!--EYES-->
+			
+			<transform translation='-2.7 2.5 -0.8'>
+				<shape>
+					<appearance>
+						<material diffuseColor="#d7efec"></material>
+					</appearance>
+					<sphere radius='0.2'></sphere>
+				</shape>
+			</transform>
+			
+			<transform translation='-2.7 2.5 -0.1'>
+				<shape>
+					<appearance>
+						<material diffuseColor="#d7efec"></material>
+					</appearance>
+					<sphere radius='0.2'></sphere>
+				</shape>
+			</transform>
+			
+			<transform translation='-2.9 2.5 -0.1'>
+				<shape>
+					<appearance>
+						<material diffuseColor="#000000"></material>
+					</appearance>
+					<sphere radius='0.05'></sphere>
+				</shape>
+			</transform>
+			
+			<transform translation='-2.9 2.5 -0.8'>
+				<shape>
+					<appearance>
+						<material diffuseColor="#000000"></material>
+					</appearance>
+					<sphere radius='0.05'></sphere>
+				</shape>
+			</transform>
+			
+			
+			<transform translation='0 4 0'>
+				<shape>
+					<appearance>
+						<material diffuseColor="1 0 0"></material>
+					</appearance>
+					<text string="мяу" size="32" style="arial" solid='false'>
+					</text>
+					
+				</shape>
+			
+			</transform>
+			
+			
+			
+			
+			
+			
+		</scene>
+	</x3d>
+</body>
 </html>
